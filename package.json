@@ -1,0 +1,8 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "This a k6 practice respository",
+  "main": "index.js",
+  "author": "Leonardo Badell",
+  "license": "MIT"
+}
