@@ -3,13 +3,18 @@ Este projeto foi desenvolvido como parte de um curso "Performance Testing: Intro
 **Descrição do Projeto**
 Este repositório contém scripts de teste que utilizam a ferramenta k6 para avaliar o desempenho e a resiliência de sistemas sob várias condições. Os tipos de testes realizados incluem:
 
-**Load Test (Teste de Carga):** Avalia como o sistema se comporta quando submetido a uma carga específica de usuários.
+**Load Test (Teste de Carga):** 
+Avalia como o sistema se comporta quando submetido a uma carga específica de usuários.
 
-**Smoke Test (Teste de Fumaça):** Realiza uma verificação rápida para garantir que as principais funcionalidades do sistema estão operando corretamente.
+**Smoke Test (Teste de Fumaça):** 
+Realiza uma verificação rápida para garantir que as principais funcionalidades do sistema estão operando corretamente.
 
-**Soak Test (Teste de Resistência):** Verifica a estabilidade do sistema quando submetido a uma carga contínua por um longo período.
+**Soak Test (Teste de Resistência):** 
+Verifica a estabilidade do sistema quando submetido a uma carga contínua por um longo período.
 
-**Spike Test (Teste de Pico):** Avalia a capacidade do sistema de lidar com picos repentinos de carga.
+**Spike Test (Teste de Pico):** 
+Avalia a capacidade do sistema de lidar com picos repentinos de carga.
 
-**Custom Metrics (Métricas Personalizadas):** Utiliza métricas definidas pelo usuário para monitorar aspectos específicos da aplicação, como contadores personalizados e tendências de tempo de resposta.
+**Custom Metrics (Métricas Personalizadas):** 
+Utiliza métricas definidas pelo usuário para monitorar aspectos específicos da aplicação, como contadores personalizados e tendências de tempo de resposta.
 
