@@ -1,6 +1,6 @@
 Este projeto foi desenvolvido como parte de um curso "Performance Testing: Introduction to k6 for Beginners" da Udemy. O objetivo é demonstrar diferentes tipos de testes de desempenho utilizando a ferramenta Grafana k6. Abaixo, você encontrará uma breve descrição dos tipos de testes implementados e o link para a documentação oficial.
 
-**Descrição do Projeto**
+**Descrição do Projeto:**
 Este repositório contém scripts de teste que utilizam a ferramenta k6 para avaliar o desempenho e a resiliência de sistemas sob várias condições. Os tipos de testes realizados incluem:
 
 **Load Test (Teste de Carga):** 
