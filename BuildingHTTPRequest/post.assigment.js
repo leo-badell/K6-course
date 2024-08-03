@@ -66,7 +66,7 @@ export default function () {
 
     const crocodrileId = res.json().id;
 
-   res = http.get(`https://test-api.k6.io/my/crocodiles/${crocodrileId}`,
+   res = http.get(`https://test-api.k6.io/my/crocodiles/${crocodrileId}/`,
         {
             headers: {
                 Authorization: 'Bearer ' + accessToken
@@ -78,5 +78,46 @@ export default function () {
         'status is 200': (r) => r.status === 200,
         'crocodrileId': (r) => r.json().id === crocodrileId
     })
+
+    res = http.put(
+        `https://test-api.k6.io/my/crocodiles/${crocodrileId}/`,
+        JSON.stringify(
+            {
+                name: 'Fulanito el cocodrilo',
+                sex: 'M',
+                date_of_birth: '2000-10-10'
+            }
+        ),
+        {
+            headers: {
+                Authorization: 'Bearer ' + accessToken,
+                'Content-Type': 'application/json'
+            }
+        }
+    );
+
+    res = http.patch(
+        `https://test-api.k6.io/my/crocodiles/${crocodrileId}/`,
+        JSON.stringify(
+            {
+                sex: 'F'
+            }
+        ),
+        {
+            headers: {
+                Authorization: 'Bearer ' + accessToken,
+                'Content-Type': 'application/json'
+            }
+        }
+    );
+
+    res = http.del(`https://test-api.k6.io/my/crocodiles/${crocodrileId}/`,
+        null,
+         {
+             headers: {
+                 Authorization: 'Bearer ' + accessToken
+             }
+         }
+     ) 
 }
     
