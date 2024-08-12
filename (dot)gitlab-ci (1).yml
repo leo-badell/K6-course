@@ -1,0 +1,6 @@
+k6:
+  image:
+    name: grafana/k6
+    entrypoint: [""]
+  script:
+    - k6 run script.js
